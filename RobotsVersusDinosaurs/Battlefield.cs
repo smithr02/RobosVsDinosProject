@@ -29,7 +29,7 @@ namespace RobotsVersusDinosaurs
         {
             bool returnValue = false;
 
-            if ((dinoFighters.myDinosaurs[i].)
+            if ((dinoFighters.myDinosaurs[0].health <= 0 && dinoFighters.myDinosaurs[1].health <= 0 && dinoFighters.myDinosaurs[2].health <=0 || (roboFighters.myRobots[0].health <=0 && roboFighters.myRobots[1].health <=0 && roboFighters.myRobots[2].health <=0)))
             {
                 returnValue = true;
             }
