@@ -22,5 +22,16 @@ namespace RobotsVersusDinosaurs
             this.attackPower = attackPower;
 
         }
+
+        public void Attack(Dinosaurs DinoToAttack) //attack method, calling in dinosaurs class
+        {
+            DinoToAttack.health -=attackPower;
+            Console.WriteLine($"{name} is attacking {DinoToAttack.name} for {attackPower} damage");
+            if (DinoToAttack.health <= 0)
+            {
+                DinoToAttack.dead = true;
+                Console.WriteLine("This dino is dead!!");
+            }
+        }
     }
 }

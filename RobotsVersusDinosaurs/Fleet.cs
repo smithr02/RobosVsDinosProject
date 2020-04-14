@@ -8,7 +8,7 @@ namespace RobotsVersusDinosaurs
 {
     class Fleet
     {
-        public List<Robots> myRobots;
+        public List<Robots> myRobots;  //created new list and stored it as myRobots.
 
         public Fleet()
         {

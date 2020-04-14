@@ -9,7 +9,7 @@ namespace RobotsVersusDinosaurs
     class Herd
     {
         
-        public List<Dinosaurs> myDinosaurs; //created new list and stored it as Dinosaurs.
+        public List<Dinosaurs> myDinosaurs; //created new list and stored it as myDinosaurs.
 
         public Herd()
         {

@@ -22,5 +22,17 @@ namespace RobotsVersusDinosaurs
             this.attackPower = attackPower;
         }
 
+        public void Attack(Robots RobotToAttack) //Dino attack method, where we take a selected robot and subtract its health from a selected dino's attack power.
+        {
+            RobotToAttack.health -= attackPower;
+            Console.WriteLine($"{name} is attacking {RobotToAttack.name} for {attackPower} damage");
+
+            if (RobotToAttack.health <= 0)
+            {
+                RobotToAttack.dead = true;
+                Console.WriteLine("This robot is destroyed!!");
+            }
+        }
+
     }
 }
